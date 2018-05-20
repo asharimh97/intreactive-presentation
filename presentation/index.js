@@ -27,6 +27,7 @@ require("normalize.css");
 const image = {
   logo: require('../assets/logo-color.png'),
   showcase: require('../assets/showcase.png'),
+  erd: require('../assets/erd.png'),
 }
 
 const latarbelakang = {
@@ -152,7 +153,16 @@ export default class Presentation extends Component {
         </Slide>
 
         <Slide transition={['fade']}>
+          <Image src={ image.erd } />
+          <Heading size={4}>ER Diagram</Heading>
+        </Slide>
+
+        <Slide transition={['fade']}>
           <Heading size={2} fit caps>Demo aplikasi</Heading>
+        </Slide>
+
+        <Slide transition={['fade']} bgColor='secondary'>
+          <Heading size={4}  textColor='primary'>Pengembangan ke depan?</Heading>
         </Slide>
 
         <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
